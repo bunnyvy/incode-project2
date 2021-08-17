@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* VARIABLES */
+:root {
+--primary-colour: #6a7b8b; 
+--secondary-colour: #bbc2c9;
+--background-colour: #f5f5f5; 
+--text-color: #5c5b5b;
+--white: #fff;
+--font: 'Montserrat', 'san-serif';
+}
+
+/*GLOBALS*/
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:var(--background-colour);
+    font-family:var(--font);
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.column {
+    flex-direction: column;
+}
+
+.img {
+    width: 100%;
+}
+
+/**LAYOUT-------------------------------------------**/
+
+body {
+    width: 100vw;
+}
+
+main {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/**HEADER------------------------------------------**/
+.nav-bar, footer {
+    background: var(--primary-colour);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    align-items: center;
+}
+
+.header-logo{
+    width: 10rem;
+}
+
+.big-logo {
+    width: 30rem;
+}
+
+.header-background {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 2rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: var(--white);
+}
+
+/*FOOTER ------------------------- */
+.footer-logo {
+    width: 7rem;
+}
+
+.socials img {
+    width: 2rem;
+}
+
+footer {
+    justify-self: flex-end;
+
+}
+
+/*MAIN --------------------------- */
+
+.hero-image {
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+
+.hero-image h1 {
+    position: absolute;
+    color: var(--white);
+    text-shadow: 5px 5px 5px #000;
+    text-transform: uppercase;
+    text-align: center; 
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 2rem; 
+}
+
+
