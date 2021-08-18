@@ -38,8 +38,8 @@ a {
     flex-direction: column;
 }
 
-.img {
-    width: 100%;
+.leicons {
+    width: 50%;
 }
 
 /**LAYOUT-------------------------------------------**/
@@ -72,10 +72,10 @@ main {
 
 .header-background {
     align-items: center;
-    display: flex;
     width: 100%;
     position: relative;
-
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -103,7 +103,10 @@ nav a {
 
 footer {
     justify-self: flex-end;
+}
 
+.socials  {
+    text-align: center;
 }
 
 /*MAIN --------------------------- */
@@ -128,4 +131,59 @@ footer {
     padding: 0 2rem; 
 }
 
+.card {
+  font-family: "Roboto", sans-serif;
+  background-color: #BDBDBD;
+  margin: 10px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0 0 4px gray;
+  font-size: smaller;
+  padding: 10px;
+}
 
+.iconstopic {
+    text-align: center;
+}
+
+.button{
+    background-color: #6A7B8B;
+    border: none;
+    color: white;
+    border-radius: .5rem;
+    padding: 1rem 5rem;
+    font-weight: 600;
+  }
+
+  .button-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom:5%;
+    
+}
+
+.votretopic {
+    text-align: center;
+}
+
+.leftsub {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.rightsub {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.sansoub {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
