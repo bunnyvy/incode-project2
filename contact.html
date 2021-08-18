@@ -7,6 +7,8 @@
   <link rel="icon" href="Assets/logo_dark.png"> 
   <title> Welcome to Mr.Coffee | Coffee Project | Coffee Lovers </title>
   <link rel="stylesheet" href="/application.css">
+  <script src="formHandler.js"defer> </script>
+
 </head>
 <body>
   <header>
@@ -29,18 +31,28 @@
   </header>
 
   <main>
-    
-    <h1> 
-        On vous attend!
-    </h1>
+    <form id="contact">
+      <div>
+        <label for="name">Name:*</label>
+        <input id="name" type="text" name="name" placeholder="Fill in name">
+      </div>
+      <div>
+        <label for="email">Email:*</label>
+        <input id="email" type="email" name="email" placeholder="Fill in email">
+      </div>
+      <button type="submit"> Submit </button>
+    </form>
 
-    <div class="Mr.Coffee Contact">
+
+  <div class="Onvous">
+    <h1> On vous attend! </h1> 
+  </div>
+
+    <div class="CoffeeContact">
         <h3> Mr. Coffee </h3>
-        <p> 15 place Jules Guesde </p>
-        <p> 75006 Paris </p> 
+        <br> 15 place Jules Guesde </br> 75006 Paris </p> 
     
-        <p> Tel: +33 9 46 25 78 45 </p>
-        <p> Mail: contact@mr-coffee.com </p> 
+        <p> Tel: +33 9 46 25 78 45 </br>  Mail: contact@mr-coffee.com </p> 
     </div>
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.2534812052786!2d2.2917732156755535!3d48.89150617929076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f9b766fd6b3%3A0xa6d26a029532dfb7!2s15%20Rue%20Jules%20Guesde%2C%2092300%20Levallois-Perret%2C%20France!5e0!3m2!1sen!2smy!4v1628841474548!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -50,7 +62,7 @@
     <img class="footer-logo" src="Assets/logo_blanc.png" alt="#TODO">
 
     <div>
-      <p>Suivez nous sur les réseaux sociaux&nbsp;!</p>
+      <p class="footertopic">Suivez nous sur les réseaux sociaux&nbsp;!</p>
       
       <div class="socials">
         <a href="https://www.linkedin.com/" target="_blank"><img src="Assets/logo_linkedin.png" alt="LinkedIn white logo"></a>

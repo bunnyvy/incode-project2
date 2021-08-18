@@ -10,7 +10,7 @@
 --font: 'Montserrat', 'san-serif';
 }
 
-/*GLOBALS*/
+/*GLOBALS---------------------------------------------------------------*/
 *, *:before, *:after {
     margin: 0;
     padding: 0;
@@ -42,7 +42,11 @@ a {
     width: 50%;
 }
 
-/**LAYOUT-------------------------------------------**/
+p {
+    margin: 10% 0;
+}
+
+/**LAYOUT-------------------------------------------------------------**/
 
 body {
     width: 100vw;
@@ -53,7 +57,7 @@ main {
     margin: 0 auto;
 }
 
-/**HEADER------------------------------------------**/
+/**HEADER-------------------------------------------------------------**/
 .nav-bar, footer {
     background: var(--primary-colour);
     display: flex;
@@ -92,24 +96,30 @@ nav a {
     color: var(--white);
 }
 
-/*FOOTER ------------------------- */
+/*FOOTER ------------------------------------------------------------- */
 .footer-logo {
-    width: 7rem;
+    width: 3rem;
 }
 
 .socials img {
     width: 2rem;
 }
 
-footer {
-    justify-self: flex-end;
+.foot {
+    flex-grow: 1;
+    text-align: center;
 }
 
 .socials  {
     text-align: center;
 }
 
-/*MAIN --------------------------- */
+.footertopic {
+    color: #fff;
+    margin: 0;
+}
+
+/*MAIN --------------------------------------------------------------- */
 
 .hero-image {
     position: relative;
@@ -157,7 +167,7 @@ footer {
     font-weight: 600;
   }
 
-  .button-text{
+.button-text{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -186,4 +196,22 @@ footer {
     text-align: center;
     display: flex;
     justify-content: center;
+}
+
+.Onvous {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.coffee {
+    width: 50%;
+}
+
+.cafe {
+    width: 50%;
+}
+
+.text {
+    padding: 2rem;
 }
