@@ -156,6 +156,7 @@ nav a {
 
 .iconstopic {
     text-align: center;
+    margin: 5%;
 }
 
 .button{
@@ -178,18 +179,21 @@ nav a {
 
 .votretopic {
     text-align: center;
+    margin: 5%;
 }
 
-.leftsub {
+.sub {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.rightsub {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+.subone {
+    margin: 0 10%;
+}
+
+.subtwo {
+    margin: 0 10%;
 }
 
 .sansoub {
@@ -206,12 +210,18 @@ nav a {
 
 .coffee {
     width: 50%;
+    margin: 5% 0;
 }
 
 .cafe {
     width: 50%;
+    margin: 5%;
 }
 
 .text {
-    padding: 2rem;
+    margin: 5%;
+}
+
+.map {
+    margin: 10%;
 }
