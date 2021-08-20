@@ -10,9 +10,14 @@
   <script src="formHandler.js"defer> </script>
 
 </head>
-<body>
-  <header>
+<body class>
+  <div class="hidden modal"> <!---TODO: change to hidden please-->
+    <h3> Here is a modal </h3>
+    <p> Great job, now close it with the button below</p>
+    <button id="close-modal">Close</button>
+  </div>
 
+  <header>
     <div class="nav-bar">
       <nav>
         <a href="index.html"><img class="logo header-logo" src="Assets/full_logo_white.png" alt="Mr Coffee's logo, white"/></a>
@@ -32,24 +37,30 @@
   </header>
 
   <main>
-    <h3> Sign up </h3>
+  <h3 class="dites"> Dites nous tout! </h3>
+  <div class= "formDiv">
     <form id="contact">
-      <div>
-        <label for="name">Name:*</label>
-        <input id="name" type="text" name="name" placeholder="Fill in name">
-      </div>
-      <div>
-        <label for="email">Email:*</label>
-        <input id="email" type="email" name="email" placeholder="Fill in email">
-      </div>
-      <label for="Gender">Gender:*</label>
+        <label for="name">Nom:*</label>
+        <input id="name" type="text" name="name" placeholder="Indiquez le Nom">
+        <label for="prenom">Prénom:*</label>
+        <input id="prenom" type="text" name="prenom" placeholder="Indiquez le Prénom">
+        <label for="telphone">Téléphone</label>
+        <input id="telephone" type="tel" name="telephone" placeholder="Indiquez le Téléphone">
+        <label for="email">Courriel:*</label>
+        <input id="email" type="email" name="email" placeholder="Indiquez le Courriel">
+      <label for="Gender">Genre:</label>
       <select name="gender" id="gender">
         <option value="None">  </option>
-        <option value="Female"> Female </option>
-        <option value="Male"> Male </option>
-        <option value="Prefer not to say"> Prefer not to say </option>
+        <option value="Female">Femelle</option>
+        <option value="Male">Mâle</option>
+        <option value="Prefer not to say"> Je préfère ne Pas Répondre </option>
     </select>
-      <button type="submit"> Submit </button>
+    <label for="message">Insérer un Message:*</label>
+    <textarea name="message" id="message" placeholder="Tapez votre message id"> </textarea>
+  </div>
+  <div class="submitbox">
+      <button class="submit" type="submit">ENVOYER</button>
+    </div>
     </form>
 
 

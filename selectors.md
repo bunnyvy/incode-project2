@@ -22,8 +22,7 @@ h2.text#subtitle - e.g. selectors all h2 tags that have a class of "text" and an
 
 
 ## GitHub
-- Start project: git init
+- start project: git init
 - Step 1: Stage our changes: git add . || undo what you added: git reset
 - Step 2: Commit our changes: git commit -m "This commit will create... entire project skeleton"
 - Step 3: Uploading: git push
- 
