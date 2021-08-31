@@ -141,7 +141,7 @@ nav a {
     padding: 0 2rem; 
 }
 
-.card {
+.card1 {
   font-family: "Roboto", sans-serif;
   background-color: #bac2c8;
   margin: 10px;
@@ -153,6 +153,32 @@ nav a {
   font-size: smaller;
   padding: 10px;
 }
+
+.card2 {
+    font-family: "Roboto", sans-serif;
+    background-color: #bac2c8;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 0 4px gray;
+    font-size: smaller;
+    padding: 10px;
+  }
+  
+.card3 {
+    font-family: "Roboto", sans-serif;
+    background-color: #bac2c8;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    box-shadow: 0 0 4px gray;
+    font-size: smaller;
+    padding: 10px;
+  }
 
 .iconstopic {
     text-align: center;
@@ -223,7 +249,9 @@ nav a {
 }
 
 .map {
-    margin: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .openimage {
@@ -267,8 +295,6 @@ input, select, textarea {
     width: 75vw;
     max-height: 80vh;
     background: #fff;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
@@ -278,11 +304,13 @@ input, select, textarea {
     text-align: center;
     overflow: scroll;
     pointer-events: all;
+    z-index: 1;
 }
 
 .modal > *{ /* direct children*/
     margin: 20px 0;
     border-radius: 15px;
+  
 }
 
 body.modal-active {
@@ -292,7 +320,7 @@ body.modal-active {
     pointer-events: none;
 }
 
-#close-modal {
+#closeModal {
     padding:15px;
     text-transform: uppercase;
     border: none;
@@ -307,19 +335,34 @@ body.modal-active {
     border-radius: .5rem;
     padding: 1rem 5rem;
     font-weight: 600;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
   }
-
-.submitbox {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    margin-top: 3%;
-    margin-bottom: 10%
-}
 
 .hidden {
     display: none;
 }
 
+.bell {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
 
+.popup {
+    position: relative;
+}
 
+@media screen and (max-width: 800px) {
+
+   .cards.flex { 
+       flex-direction: column;
+       width: 50%;
+       margin: 10px auto;
+
+   }
+}
